@@ -2,6 +2,7 @@ import { BeakerIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import Button from "../../atoms/Button";
 import reactLogo from "../../../assets/react.svg";
+import Container from "../../templates/Container";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -13,7 +14,7 @@ const Home = () => {
   }, [count]);
 
   return (
-    <>
+    <Container>
       <div>
         <a href="https://react.dev" target="_blank" rel="noreferrer">
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -37,7 +38,7 @@ const Home = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </Container>
   );
 };
 
